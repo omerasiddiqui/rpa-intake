@@ -1,0 +1,292 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RPA Manager</title>
+</head>
+
+<body>
+
+    <!-- header starts here -->
+    <header class="container">
+        <div>
+            <nav class="navbar navbar-light">
+                <div class="nav-left">
+                    <img src="assets/cl_logo.gif" width="100" height="25">
+                </div>
+                <div>
+                    <h4 class="heading-text">RPA Manager</h4>
+                </div>
+                <div class="nav-right">
+                    <div id="nav-links">
+                        <p id="cuid">cuid</p>
+                        <a href="#">
+                            <p id="logout">logout</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <!-- header ends here -->
+
+    <!-- main starts here -->
+    <main>
+        <div class="dashboard row">
+            <div class="dashboard-item">
+                <h5>23</h5>
+                <p style="color: grey">New</p>
+            </div>
+            <div class="dashboard-item">
+                <h5>23</h5>
+                <p style="color: royalblue">Financial Review</p>
+            </div>
+            <div class="dashboard-item">
+                <h5>10</h5>
+                <p style="color: orangered">Process Review</p>
+            </div>
+            <div class="dashboard-item">
+                <h5>0</h5>
+                <p style="color: slategray">Solution Review</p>
+            </div>
+            <div class="dashboard-item">
+                <h5>4</h5>
+                <p style="color: green">Environment</p>
+            </div>
+            <div class="dashboard-item">
+                <h5>23</h5>
+                <p style="color: rebeccapurple">Resource Allocation</p>
+            </div>
+            <div class="dashboard-item">
+                <h5>36</h5>
+                <p style="color: tomato">Develop/Implement</p>
+            </div>
+            <div class="dashboard-item">
+                <h5>101</h5>
+                <p style="color: maroon">Complete</p>
+            </div>
+            <div class="dashboard-item">
+                <h5>14</h5>
+                <p style="color: red">Hold</p>
+            </div>
+        </div>
+
+        <div class="row utils" style="width: 90%; margin: auto auto;margin-top: 10px;">
+            <div class="add-projects">
+                <button class="addProject">
+                   + Add Project
+                </button>
+                <button class="addTask">
+                    + Add Task
+                </button>
+            </div>
+            <div class="rpaLinks">
+                <div class="rpa-item">
+                    <a href="#">RPA Reporting</a>
+                </div>
+                <div class="rpa-item">
+                    <a href="#">RPA Asset MGMT</a>
+                </div>
+                <div class="rpa-item">
+                    <a href="#">RPA App MGMT</a>
+                </div>
+                <div class="rpa-item">
+                    <a href="#">RPA Tool Config</a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <label for="search">Search: </label>
+                <input type="text" name="search" id="search" placeholder=" Search Project">
+            </div>
+            <!-- new project modal -->
+            <div class="newProject">
+                <div class="exit-modal">
+                    <p class="exit">X</p>
+                </div>
+                <div class="projectField projectField-text">
+                    <label for="appName">Application Name:</label>
+                    <input type="text" name="appName">
+                </div>
+                <div class="projectField projectField-text">
+                    <label for="acronym">Acronym: </label>
+                    <input type="text" name="acronym">
+                </div>
+                <div class="projectField projectField-text">
+                    <label for="sysgenId">Systen ID: </label>
+                    <input type="text" name="sysgenId">
+                </div>
+                <div class="projectField projectField-text">
+                    <label for="appType">Application Type:</label>
+                    <select name="appType" id="appType">
+                        <option value="api">API</option>
+                        <option value="web">Web</option>
+                        <option value="db">Database</option>
+                        <option value="thickClient">Thick Client</option>
+                    </select>
+                </div>
+                <div class="projectField projectField-text">
+                    <label for="installs">Software Installs: </label>
+                    <input type="text">
+                </div>
+                <div class="projectField">
+                    <label for="testable">Testable: </label>
+                    <div class="radioInputs">
+                        <input type="radio" id="testable1" name="testable" value="Yes">
+                        <label for="testable1">Yes</label>
+                        <input type="radio" id="testable2" name="testable" value="No">
+                        <label for="testable2">No</label>
+                    </div>
+
+                </div>
+                <div class="projectField projectField-text">
+                    <label for="riskRating">Risk Rating: </label>
+                    <input type="text" name="riskRating">
+                </div>
+                <div class="projectField">
+                    <label for="offshore">Offshore Dev: </label>
+                    
+                    <div class="radioInputs">
+                        <input type="radio" id="offshore1" name="offshore" value="Yes">
+                        <label for="offshore1">Yes</label>
+                        <input type="radio" id="offshore2" name="offshore" value="No">
+                        <label for="offshore2">No</label>
+                    </div>
+                </div>
+                <div class="projectField projectField-text">
+                    <label for="appContact" style="margin-right: 10px;">Application Contact: </label>
+                    <input type="text" name="appContact">
+                </div>
+                <div class="projectField" style="padding-bottom: 5px;border-bottom: 3px solid #608AC8;">
+                    <label for="metTeam">Met with team: </label>
+                    
+                    <div class="radioInputs">
+                        <input type="radio" id="metTeam1" name="metTeam" value="Yes">
+                        <label for="metTeam1">Yes</label>
+                        <input type="radio" id="metTeam2" name="metTeam" value="No">
+                        <label for="metTeam2">No</label>
+                    </div>
+                </div>
+                <input type="button" value="Submit" class="submitNewProject">
+            </div>
+        </div>
+
+        <div class="row progressBar">
+            <div class="progressItem" id="projectsPipeline">
+                <button>Projects Pipeline</button>
+            </div>
+            <div class="progressItem" id="financialSummary">
+                <button>Financial Summary</button>
+            </div>
+            <div class="progressItem" id="automationSummary">
+                <button>Automation Summary</button>
+            </div>
+            <div class="progressItem" id="stagegateSummary">
+                <button>Stagegate Summary</button>
+            </div>
+        </div>
+
+        <div class="row tableData">
+                <table style="width: 90%">
+                        <!-- table headers -->
+                            <tr style="background: #57ad57; color: white; font-weight: bold;">
+                                <td>Project ID</td>
+                                <td>Description</td>
+                                <td>Status</td>
+                                <td>Business Group</td>
+                                <td>Start Date</td>
+                                <td>Due Date</td>
+                            </tr>
+                        <!-- table data -->
+                        <!-- all data is placeholder, will be removed -->
+
+                        <tr>
+                                <td>1d24lk </td>
+                                <td>Project for ...</td>
+                                <td>Completed</td>
+                                <td>Quickhits</td>
+                                <td>10/03/2018</td>
+                                <td>10/18/2018</td>
+                        </tr>
+
+
+                            <tr>
+                                <td>2d24lk </td>
+                                <td>Project for ...</td>
+                                <td>In Progress</td>
+                                <td>Quickhits</td>
+                                <td>10/27/2018</td>
+                                <td>11/31/2018</td>
+                            </tr>
+
+                            <tr>
+                                    <td>390ds20 </td>
+                                    <td>Project for ...</td>
+                                    <td>In Progress</td>
+                                    <td>Quickhits</td>
+                                    <td>10/31/2018</td>
+                                    <td>12/20/2018</td>
+                                </tr>
+
+                            <tr>
+                                <td>4lZ93kd </td>
+                                <td>Project for ...</td>
+                                <td>Approval Pending</td>
+                                <td>Quickhits</td>
+                                <td>11/01/2018</td>
+                                <td>11/13/2018</td>
+                            </tr>
+
+                            <tr>
+                                <td>5pDs299 </td>
+                                <td>Project for ...</td>
+                                <td style="color: red;">Cancelled</td>
+                                <td>Quickhits</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+
+                            <tr>
+                                <td>654fpkd </td>
+                                <td>Project for ...</td>
+                                <td>Approval Pending</td>
+                                <td>Quickhits</td>
+                                <td>11/05/2018</td>
+                                <td>12/14/2018</td>
+                            </tr>
+
+                            <tr>
+                                <td>7lsn502 </td>
+                                <td>Project for ...</td>
+                                <td>Approval Pending</td>
+                                <td>Quickhits</td>
+                                <td>11/15/2018</td>
+                                <td>01/10/2019</td>
+                            </tr>
+
+                    </table>
+        </div>
+
+
+
+
+
+
+    </main>
+    <!-- main ends here -->
+
+    <!-- footer starts here -->
+    <!-- footer ends here -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

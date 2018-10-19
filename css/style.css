@@ -1,0 +1,297 @@
+/* global styles */
+
+body {
+    background: #ECEFF4;
+    color: black;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+/* header styles */
+
+#nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+.nav-left {
+    width: 191.02px;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-right a {
+    color: green;
+}
+
+.heading-text {
+    font-size: 24px;
+}
+
+#logout, #cuid {
+    margin: 0 20px;
+    font-size: 1.5rem;
+    color: green;
+}
+
+/* dashboard styles */
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 99%;
+    margin: auto auto;
+}
+
+.dashboard-item {
+    border: 1.3px solid slateblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10.8%;
+    padding: 5px 0;
+    border-radius: 2px;
+    box-shadow: 1px 2px grey;
+    background: white;
+}
+
+.dashboard h5 {
+    color: black;
+    font-size: 2rem;
+}
+
+.dashboard p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+/* utils styles */
+
+.utils {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.add-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.addProject, .addTask {
+    padding: 5px 10px;
+    border-radius: 25px;
+    background: #57ad57;
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 5px;
+    width: 125px;
+    box-shadow: 3px 1px grey;
+    outline: none;
+}
+
+.addTask {
+    cursor: not-allowed;
+}
+
+.addProject:active, .addTask:active {
+    box-shadow: none;
+}
+
+.search-bar label {
+    font-size: 1.5rem;
+    margin-right: 3px;
+    margin-bottom: 0;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar input[type=text] {
+    height: 35px;
+    width: 250px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+
+.newProject {
+    border: 2px solid #608AC8;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.projectField {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+select[name="appType"] {
+    width: 300px;
+}
+
+.projectField input[type=text] {
+    width: 300px;
+}
+
+.projectField:nth-of-type(even) {
+    background: rgb(219, 233, 241);
+    padding: 2.5px 0;
+}
+
+.submitNewProject {
+    padding: 5px 10px;
+    border-radius: 25px;
+    background: #608AC8;
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 5px;
+    width: 125px;
+    box-shadow: 3px 1px grey;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submitNewProject:active {
+    box-shadow: none;
+}
+
+.exit-modal {
+    width: 100%;
+}
+
+.exit {
+    border: 1px solid black;
+    padding: 2px 6px;
+    color: white;
+    background: red;
+    text-align: right;
+    width: 20px;
+    margin-bottom: 5px;
+    margin-left: 97.5%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 1px 1px grey;
+}
+
+.exit:active {
+    box-shadow: none;
+}
+
+.rpaLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.rpaLinks a {
+    color: white;
+}
+
+.rpa-item {
+    border-bottom: 1px solid black;
+    padding: 3px 9px;
+    width: 25%;
+    border: 1px solid black; 
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3px;
+    background: #608AC8;
+}
+
+/* progress bar styles */
+
+.progressBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+.progressItem {
+    width: 24%;
+}
+
+.progressItem button {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    background: transparent;
+    border-color: #608AC8;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+.progressItem button:hover, .progressItem button:focus {
+    background: #608AC8;
+    color: white;
+}
+
+/* table styles */
+
+.tableData {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+table {
+    color: black;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 0.5% 1%;
+}
+
+tr:nth-last-of-type(odd) {
+    background: white;
+}
